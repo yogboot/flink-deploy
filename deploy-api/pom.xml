@@ -6,9 +6,9 @@
     <modelVersion>4.0.0</modelVersion>
 
     <parent>
-        <groupId>io.github.deploy</groupId>
+        <groupId>io.github.yogboot</groupId>
         <artifactId>flink-deploy-parent</artifactId>
-        <version>1.0.0</version>
+        <version>1.0.1</version>
     </parent>
 
     <artifactId>deploy-api</artifactId>

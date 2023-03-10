@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>io.github.deploy</groupId>
+    <artifactId>flink-deploy-parent</artifactId>
+    <name>flink-deploy</name>
+    <version>1.0.0</version>
+    <description>flink-deploy</description>
+    <packaging>pom</packaging>
+
+    <modules>
+        <module>deploy-api</module>
+        <module>deploy-client</module>
+    </modules>
+
+    <properties>
+        <java.version>1.8</java.version>
+        <maven.compiler.source>${java.version}</maven.compiler.source>
+        <maven.compiler.target>${java.version}</maven.compiler.target>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <flink.version>1.14.6</flink.version>
+        <flinkcdc.version>2.3.0</flinkcdc.version>
+        <scala.version>2.12</scala.version>
+        <hadoop.version>3.1.1</hadoop.version>
+        <hive.version>3.1.0</hive.version>
+        <mysql.version>8.0.30</mysql.version>
+        <springboot.version>2.7.9</springboot.version>
+        <jsoup.vesion>1.15.4</jsoup.vesion>
+        <fastjson.version>2.0.23</fastjson.version>
+        <lombok.version>1.18.26</lombok.version>
+        <guava.version>31.0.1-jre</guava.version>
+        <log4j.version>[2.17.2,)</log4j.version>
+        <snakeyaml.version>1.33</snakeyaml.version>
+    </properties>
+
+    <dependencies>
+
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>${lombok.version}</version>
+            <scope>provided</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>fastjson</artifactId>
+            <version>${fastjson.version}</version>
+        </dependency>
+
+    </dependencies>
+
+    <repositories>
+        <repository>
+            <id>aliyun</id>
+            <name>aliyun</name>
+            <url>https://maven.aliyun.com/repository/public</url>
+        </repository>
+    </repositories>
+
+    <pluginRepositories>
+        <pluginRepository>
+            <id>aliyun</id>
+            <name>aliyun</name>
+            <url>https://maven.aliyun.com/nexus/content/groups/public</url>
+        </pluginRepository>
+    </pluginRepositories>
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-dependencies</artifactId>
+                <version>${springboot.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
+</project>

@@ -1,0 +1,6 @@
+server:
+  port: 30155
+
+deploy:
+  check-env: true
+  secret: 565656

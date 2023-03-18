@@ -1,0 +1,15 @@
+#!/bin/bash
+
+for metaResult in $(ps -e -o pid,command | grep deploy-server.jar)
+do
+    if [ "$metaResult" == java ]; then
+      DEPLOY_PID=${PRE_VAL}
+    	break
+	fi
+	PRE_VAL=${metaResult}
+done
+if [ _"${DEPLOY_PID}" != _ ];then
+  kill -9 "${DEPLOY_PID}"
+fi
+
+echo "关闭成功"

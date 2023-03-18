@@ -1,0 +1,15 @@
+#!/bin/bash
+
+BASE_PATH=$(cd "$(dirname "$0")" || exit ; pwd)
+cd "${BASE_PATH}" || exit
+
+bash "${BASE_PATH}"/../bin/deploy-stop
+
+DEPLOY_LOG="${BASE_PATH}"/../log/deploy-server.log
+if [ ! -f "$DEPLOY_LOG" ]; then
+    touch "$DEPLOY_LOG"
+fi
+
+DEPLOY_APP="${BASE_PATH}"/../lib/deploy-server.jar
+nohup java -jar -Xmx2048m "${DEPLOY_APP}" --spring.config.additional-location="${BASE_PATH}"/../conf/application-deploy.yml >> "${DEPLOY_LOG}" 2>&1 &
+tail -f ${DEPLOY_LOG}

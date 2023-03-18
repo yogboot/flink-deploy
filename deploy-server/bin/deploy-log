@@ -1,0 +1,8 @@
+#!/bin/bash
+
+BASE_PATH=$(cd "$(dirname "$0")" || exit ; pwd)
+cd "${BASE_PATH}" || exit
+
+LOG_PATH="${BASE_PATH}"/../log/deploy-server.log
+echo "Flink-Deploy log file "+ "${LOG_PATH}"
+tail -f "${LOG_PATH}"

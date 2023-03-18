@@ -1,0 +1,15 @@
+spring:
+  profiles:
+    active: deploy
+
+application:
+  version: 1.0.1
+
+server:
+  port: 30155
+  servlet:
+    context-path: /flink-deploy
+
+deploy:
+  check-env: true
+  secret: deploy-key

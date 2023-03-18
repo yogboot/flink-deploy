@@ -15,7 +15,9 @@
 
     <modules>
         <module>deploy-api</module>
+        <module>deploy-common</module>
         <module>deploy-client</module>
+        <module>deploy-server</module>
     </modules>
 
     <properties>

@@ -31,9 +31,9 @@
         <hadoop.version>3.1.1</hadoop.version>
         <hive.version>3.1.0</hive.version>
         <mysql.version>8.0.30</mysql.version>
-        <springboot.version>2.7.9</springboot.version>
+        <springboot.version>2.7.10</springboot.version>
         <jsoup.vesion>1.15.4</jsoup.vesion>
-        <fastjson.version>2.0.23</fastjson.version>
+        <fastjson.version>2.0.29</fastjson.version>
         <lombok.version>1.18.26</lombok.version>
         <guava.version>31.0.1-jre</guava.version>
         <log4j.version>[2.17.2,)</log4j.version>

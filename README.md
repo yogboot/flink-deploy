@@ -1,7 +1,7 @@
 # flink-deploy
 flink 远程提交 sql任务
 
-#设置环境变量
+#设置环境变量  
 export JAVA_HOME=/usr/java/jdk1.8.0
 export CLASSPATH=.:$CLASSPATH:$JAVA_HOME/lib
 export PATH=$PATH:$JAVA_HOME/bin

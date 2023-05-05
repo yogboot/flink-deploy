@@ -19,12 +19,12 @@ export PATH=$PATH:$HADOOP_CLASSPATH
 export HADOOP_USER_NAME=hdfs
 export PATH=$PATH:$HADOOP_USER_NAME
 
-#开启flink历史服务
+#开启flink历史服务  
 bash ./bin/start-cluster.sh
 bash ./bin/stop-cluster.sh
 bin/historyserver.sh start
 
-#启动服务
+#启动服务  
 chmod -R 777 /usr/local/flink-deploy
 deploy version
 deploy config

@@ -7,12 +7,12 @@
     <parent>
         <groupId>io.github.yogboot</groupId>
         <artifactId>flink-deploy-parent</artifactId>
-        <version>1.0.1</version>
+        <version>1.0.2</version>
     </parent>
 
     <artifactId>deploy-server</artifactId>
     <name>deploy-server</name>
-    <version>1.0.1</version>
+    <version>1.0.2</version>
 
     <dependencies>
 

@@ -8,7 +8,7 @@
     <groupId>io.github.yogboot</groupId>
     <artifactId>flink-deploy-parent</artifactId>
     <name>flink-deploy</name>
-    <version>1.0.2</version>
+    <version>1.0.3</version>
     <description>flink-deploy</description>
     <packaging>pom</packaging>
     <url>https://github.com/yogboot/flink-deploy</url>
@@ -17,7 +17,8 @@
         <module>deploy-api</module>
         <module>deploy-common</module>
         <module>deploy-client</module>
-        <module>deploy-server</module>
+        <module>deploy-plugins</module>
+<!--        <module>deploy-server</module>-->
     </modules>
 
     <properties>
@@ -29,13 +30,14 @@
         <flinkcdc.version>2.3.0</flinkcdc.version>
         <scala.version>2.12</scala.version>
         <hadoop.version>3.1.1</hadoop.version>
-        <hive.version>3.1.0</hive.version>
+        <hive.version>3.1.1</hive.version>
+        <hutool.version>5.8.19</hutool.version>
         <mysql.version>8.0.30</mysql.version>
-        <springboot.version>2.7.10</springboot.version>
+        <springboot.version>2.7.12</springboot.version>
         <jsoup.vesion>1.15.4</jsoup.vesion>
-        <fastjson.version>2.0.29</fastjson.version>
+        <fastjson.version>2.0.33</fastjson.version>
         <lombok.version>1.18.26</lombok.version>
-        <guava.version>31.0.2-jre</guava.version>
+        <guava.version>31.1-jre</guava.version>
         <log4j.version>[2.17.2,)</log4j.version>
         <snakeyaml.version>1.33</snakeyaml.version>
     </properties>

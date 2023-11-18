@@ -10,8 +10,9 @@ cd "${BASE_PATH}" || exit
 
 case ${exec_command} in
     start) "${BASE_PATH}"/../bin/deploy-start;;
+    log) "${BASE_PATH}"/../bin/deploy-log;;
     stop) "${BASE_PATH}"/../bin/deploy-stop;;
-    version) echo "Flink-Deploy version is v1.0.3";;
+    version) echo "Flink-Deploy version is v1.0.0";;
     config) vim "${BASE_PATH}"/../conf/application-deploy.yml;;
     status) ps -e -o pid,command | grep deploy-plugin.jar;;
 esac
